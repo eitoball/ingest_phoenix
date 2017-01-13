@@ -16,4 +16,5 @@ config :ingest_phoenix, IngestPhoenix.Repo,
   password: "postgres",
   database: "ingest_phoenix_test",
   hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
+  pool: Ecto.Adapters.SQL.Sandbox,
+  types: IngestPhoenix.PostgresTypes

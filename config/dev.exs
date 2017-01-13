@@ -40,4 +40,5 @@ config :ingest_phoenix, IngestPhoenix.Repo,
   password: "postgres",
   database: "ingest_phoenix_dev",
   hostname: "localhost",
-  pool_size: 10
+  pool_size: 10,
+  types: IngestPhoenix.PostgresTypes

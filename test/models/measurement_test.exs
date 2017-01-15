@@ -3,7 +3,7 @@ defmodule IngestPhoenix.MeasurementTest do
 
   alias IngestPhoenix.Measurement
 
-  @valid_attrs %{captured_at: %{day: 17, hour: 14, min: 0, month: 4, sec: 0, year: 2010}, device_id: 42, payload: %{}}
+  @valid_attrs %{captured_at: "2017-01-13T05:56:35Z", device_id: 1553490618, location: %Geo.Point{ coordinates: { -70.78382, 42.564835 }, srid: 4326 }, lora_snr: 7, lora_cpm: 25, payload: %{}}
   @invalid_attrs %{}
 
   test "changeset with valid attributes" do

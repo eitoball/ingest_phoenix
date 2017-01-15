@@ -20,7 +20,8 @@ defmodule IngestPhoenix.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", IngestPhoenix do
-  #   pipe_through :api
-  # end
+  scope "/api", IngestPhoenix do
+    pipe_through :api
+    resources "/measurements", MeasurementController, only: [:create]
+  end
 end
